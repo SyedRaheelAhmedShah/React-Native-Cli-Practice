@@ -27,17 +27,26 @@ const Animation = () => {
         title={'Animation Methods'}
         onPress={() => navigation.navigate('AnimationMethods')}
       />
-       <Custombtn
+      <Custombtn
         title={'Interpolate Animation'}
         onPress={() => navigation.navigate('InterpolateAnimation')}
       />
-       <Custombtn
+      <Custombtn
         title={'TapGesture Animation'}
         onPress={() => navigation.navigate('TapGestureAnimation')}
       />
-       <Custombtn
+      <Custombtn
         title={'PenGesture Animation'}
         onPress={() => navigation.navigate('PenGestureAnimation')}
+      />
+
+      <Custombtn
+        title={'TapGesture Practice'}
+        onPress={() => navigation.navigate('TapGesturePractice')}
+      />
+      <Custombtn
+        title={'PanGesture Practice'}
+        onPress={() => navigation.navigate('PanGesturePractice')}
       />
     </View>
   );

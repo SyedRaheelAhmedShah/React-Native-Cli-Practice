@@ -2,7 +2,7 @@ import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import Hook from './Hook';
-import Formvalidation from './Screens/Formvalidation'
+import Formvalidation from './Screens/Formvalidation';
 
 const Sowcasescreen = () => {
   const navigation = useNavigation();
@@ -34,21 +34,26 @@ const Sowcasescreen = () => {
         }}
         style={styles.btntxt}
       >
-        <Text style={{ fontSize: 18, fontWeight: '500' }}>
-          Form Validation
-        </Text>
+        <Text style={{ fontSize: 18, fontWeight: '500' }}>Form Validation</Text>
       </TouchableOpacity>
-      
+
       <TouchableOpacity
         onPress={() => {
           navigation.navigate('Animation');
         }}
         style={styles.btntxt}
       >
-        <Text style={{ fontSize: 18, fontWeight: '500' }}>
-         Animation
-        </Text>
+        <Text style={{ fontSize: 18, fontWeight: '500' }}>Animation</Text>
       </TouchableOpacity>
+<TouchableOpacity
+        onPress={() => {
+          navigation.navigate('AsynMain');
+        }}
+        style={styles.btntxt}
+      >
+        <Text style={{ fontSize: 18, fontWeight: '500' }}>AsynMain</Text>
+      </TouchableOpacity>
+      
     </View>
   );
 };

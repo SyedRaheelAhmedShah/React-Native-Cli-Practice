@@ -36,7 +36,7 @@ const PenGestureAnimation = () => {
 
       //agr hum chaty hain box phir apni jagha wapis aa jye tou
 
-      // saveX.value = 0;
+      // saveX.value = 0;        // saveX.value = withspring(0)
       // saveY.value = 0;
       // valueX.value = 0;
       // valueY.value = 0;

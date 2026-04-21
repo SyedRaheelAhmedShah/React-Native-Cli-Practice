@@ -36,6 +36,9 @@ import AnimationMethods from './Animations/AnimationMethods';
 import InterpolateAnimation from './Animations/InterpolateAnimation';
 import TapGestureAnimation from './Animations/TapGestureAnimation';
 import PenGestureAnimation from './Animations/PenGestureAnimation';
+import PanGesturePractice from './Animations/PanGesturePractice';
+import TapGesturePractice from './Animations/TapGesturePractice';
+import AsynMain from './AsyncStorage/AsynMain';
 
 const Stack = createNativeStackNavigator();
 
@@ -80,7 +83,18 @@ const StackNaviga = () => {
           name="PenGestureAnimation"
           component={PenGestureAnimation}
         />
+        <Stack.Screen
+          name="TapGesturePractice"
+          component={TapGesturePractice}
+        />
+        <Stack.Screen
+          name="PanGesturePractice"
+          component={PanGesturePractice}
+        />
 
+        {/* Async storage */}
+        <Stack.Screen name="AsynMain" component={AsynMain} />
+        
         {/* API SCREEN */}
         <Stack.Screen name="ApiList" component={ApiList} />
         <Stack.Screen name="GetApis" component={GetApis} />
