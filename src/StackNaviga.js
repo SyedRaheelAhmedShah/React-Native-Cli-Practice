@@ -39,6 +39,10 @@ import PenGestureAnimation from './Animations/PenGestureAnimation';
 import PanGesturePractice from './Animations/PanGesturePractice';
 import TapGesturePractice from './Animations/TapGesturePractice';
 import AsynMain from './AsyncStorage/AsynMain';
+import ReducerPracticeScr from './Reducer/screens/ReducerPracticeScr';
+import AllUsersList from './Reducer/screens/AllUsersList';
+import AddUser from './Reducer/screens/AddUser';
+import UpdateUser from './Reducer/screens/UpdateUser';
 
 const Stack = createNativeStackNavigator();
 
@@ -94,7 +98,16 @@ const StackNaviga = () => {
 
         {/* Async storage */}
         <Stack.Screen name="AsynMain" component={AsynMain} />
-        
+
+        {/* Reducer */}
+        <Stack.Screen
+          name="ReducerPracticeScr"
+          component={ReducerPracticeScr}
+        />
+        <Stack.Screen name="AllUserList" component={AllUsersList} />
+        <Stack.Screen name="AddUser" component={AddUser} />
+        <Stack.Screen name="UpdateUser" component={UpdateUser} />
+
         {/* API SCREEN */}
         <Stack.Screen name="ApiList" component={ApiList} />
         <Stack.Screen name="GetApis" component={GetApis} />

@@ -16,7 +16,6 @@ const Sowcasescreen = () => {
       >
         <Text style={{ fontSize: 18, fontWeight: '500' }}>Hooks</Text>
       </TouchableOpacity>
-
       <TouchableOpacity
         onPress={() => {
           navigation.navigate('ApiList');
@@ -27,7 +26,6 @@ const Sowcasescreen = () => {
           Notes App axios Api
         </Text>
       </TouchableOpacity>
-
       <TouchableOpacity
         onPress={() => {
           navigation.navigate('Formvalidation');
@@ -36,7 +34,6 @@ const Sowcasescreen = () => {
       >
         <Text style={{ fontSize: 18, fontWeight: '500' }}>Form Validation</Text>
       </TouchableOpacity>
-
       <TouchableOpacity
         onPress={() => {
           navigation.navigate('Animation');
@@ -45,7 +42,7 @@ const Sowcasescreen = () => {
       >
         <Text style={{ fontSize: 18, fontWeight: '500' }}>Animation</Text>
       </TouchableOpacity>
-<TouchableOpacity
+      <TouchableOpacity
         onPress={() => {
           navigation.navigate('AsynMain');
         }}
@@ -53,7 +50,16 @@ const Sowcasescreen = () => {
       >
         <Text style={{ fontSize: 18, fontWeight: '500' }}>AsynMain</Text>
       </TouchableOpacity>
-      
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('ReducerPracticeScr');
+        }}
+        style={styles.btntxt}
+      >
+        <Text style={{ fontSize: 18, fontWeight: '500' }}>
+          Reducer PracticeScr
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 };

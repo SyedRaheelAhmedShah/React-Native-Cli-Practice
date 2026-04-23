@@ -1,10 +1,14 @@
-import { } from 'react-native';
+import {} from 'react-native';
 import React from 'react';
-import StackNaviga from './src/StackNaviga'
+import StackNaviga from './src/StackNaviga';
+import { Provider } from 'react-redux';
+import MyStore from './src/Reducer/Store/MyStore';
 
 const App = () => {
   return (
-    <StackNaviga />
+    <Provider store={MyStore}>
+      <StackNaviga />
+    </Provider>
   );
 };
 
